@@ -99,7 +99,7 @@ h2{
 }
 
 .bgGroup img{
-    height: 100vh;
+    height: 141vh;
 }
 
 
@@ -380,7 +380,10 @@ footer{
 
 
 @media (min-width: 768px) {
-     
+    .bigMenuNames div {
+        margin: 0vh 4vw 0vh 4vw;
+        font-size: 1.2em;
+    }
 }
 
 @media (min-width: 992px) {
@@ -400,7 +403,17 @@ footer{
     
     .enter p {
     font-size: 3em;
-}
+    }
+
+    .bigMenuNames div {
+        margin: 2vh 4vw 0vh 4vw;
+        font-size: 1.5em;
+    }
+
+    .bigMenuNames div {
+        margin: 0vh 4vw 0vh 4vw;
+        font-size: 0.95em;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -409,7 +422,43 @@ footer{
     }
     
     h2{
-        font-size: 3em;
+        font-size: 2em;
+    }
+
+    .lineOne img {
+        height: 9vh;
+    }
+
+    .textBox p {
+        font-size: 2.3em;
+    }
+
+    /* .bgGroup img {
+        height: 237vh;
+    } */
+
+    #lineFour {
+        top: 50vh;
+    }
+    
+}
+
+@media (min-width: 1400px) {
+    .textBox p {
+        font-size: 2.6em;
+
+    }
+
+    .home {
+        width: 8vw;
+    }
+
+    .bigMenuNames div {
+        font-size: 1.1 em;
+    }
+
+    #lineFour {
+        top: 60vh;
     }
 }
 
