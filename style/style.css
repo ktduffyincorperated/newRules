@@ -255,8 +255,6 @@ kt ::-webkit-progress-value
     margin: 2vh 0 0 0;
 }
 
-
-
 .rowOnePop img{
     width: 13vw;
     height: 13vw;
@@ -440,6 +438,10 @@ footer{
     #lineFour {
         top: 50vh;
     }
+
+    #KTPop h4, #rashinPop h4, #shawneePop h4, #suePop h4, #chelseaPop h4 {
+        margin: 8vh 0 0 0;
+    }
     
 }
 
@@ -460,8 +462,16 @@ footer{
     #lineFour {
         top: 60vh;
     }
-}
 
+    .bigMenuNames h3 {
+        font-family: aldrich;
+        font-size: 4em;
+    }
+    footer{
+        height: 60vh;
+    }
+
+}
 
 
 
