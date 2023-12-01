@@ -23,8 +23,25 @@ body {
     max-width: 100% !important;
     min-width: 100% !important;
     background-color: #D9D9D9;
-
+    -webkit-animation: cursor 400ms infinite;
+    animation: cursor 400ms infinite;
 }
+
+@-webkit-keyframes cursor {
+    0% {cursor: url(../assets/one.png), auto;}
+    30% {cursor: url(../assets/two.png), auto;}
+    50% {cursor: url(../assets/four_.png), auto;}
+    70% {cursor: url(../assets/three.png), auto;}
+    100% {cursor: url(../assets/five.png), auto;}
+  } 
+  
+  @keyframes cursor {
+    0% {cursor: url(../assets/one.png), auto;}
+    30% {cursor: url(../assets/two.png), auto;}
+    50% {cursor: url(../assets/four_.png), auto;}
+    70% {cursor: url(../assets/three.png), auto;}
+    100% {cursor: url(../assets/five.png), auto;}
+  } 
 
 #pageOne{
     margin-left: 3vw;
@@ -145,13 +162,13 @@ h2{
     width: 90vw;
     margin: 0 auto;
     animation: 10s ease-in-out 0s infinite alternate enterButton;
-  background-color: #2C1AFF;
- 
-  margin: 0 auto;
+    background-color: #2C1AFF;
+    margin: 0 auto;
+    box-shadow: 0px 4px 4px 0px rgba(2,0,36,0.25);
+}
 
-  box-shadow: 0px 4px 4px 0px rgba(2,0,36,0.25);
-
-
+.enter:hover{
+    color: black;
 }
 
 .enter p{
@@ -206,6 +223,10 @@ page two
     /* margin: 4vw 4vw 9vh 4vw;     */
     line-height: 0.9em;
     z-index: 1000;
+}
+
+h3:hover{
+    color: #FC79FF;
 }
 
 .bigMenuNames img{
@@ -339,7 +360,7 @@ footer{
 .footerSqig img{
     width: 200vw;
     margin-left: 0vh;
-    animation: 10s ease-in-out 0s infinite alternate lineFooter;
+    animation: 10s ease-in-out 0s infinite lineFooter;
 }  
 
 @keyframes lineFooter{
@@ -347,7 +368,24 @@ footer{
     100%{margin-left: -30vh}
 }
 
+.ktFooter:hover{
+    color: #FC79FF;
+}
+.chelseaFooter:hover{
+    color: #FC79FF;
+}
 
+.sueFooter:hover{
+    color: #FC79FF;
+}
+
+.shawneeFooter:hover{
+    color: #FC79FF;
+}
+
+.rashinFooter:hover{
+    color: #FC79FF;
+}
 
 
 
@@ -403,14 +441,21 @@ footer{
     font-size: 3em;
     }
 
-    .bigMenuNames div {
+    /* .bigMenuNames div {
         margin: 2vh 4vw 0vh 4vw;
         font-size: 1.5em;
-    }
+    } */
 
     .bigMenuNames div {
-        margin: 0vh 4vw 0vh 4vw;
+        margin: -2vh 4vw 0vh 4vw;
         font-size: 0.95em;
+    }
+
+    .star{
+        display: block;
+        position: absolute;
+        bottom: 9vh;
+        left: -8vw;
     }
 }
 
@@ -465,10 +510,11 @@ footer{
 
     .bigMenuNames h3 {
         font-family: aldrich;
-        font-size: 4em;
+        font-size: 4em;margin-top: 6.5vh;
     }
+
     footer{
-        height: 60vh;
+        height: 63vh;
     }
 
 }
