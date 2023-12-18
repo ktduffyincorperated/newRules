@@ -36,7 +36,7 @@ $(document).ready(function() {
 
     $(".ex").on("click", function(){
         $("#pageTwo").show();
-        $("#KTPop, #RashinPop, #shawneePop, #suePop, #chelseaPop").hide();
+        $("#KTPop, #rashinPop, #shawneePop, #suePop, #chelseaPop").hide();
     });
     
     $(".home").on("click", function(){

@@ -27,6 +27,10 @@ body {
     animation: cursor 400ms infinite;
 }
 
+a{
+    text-decoration: none;
+}
+
 @-webkit-keyframes cursor {
     0% {cursor: url(../assets/one.png), auto;}
     30% {cursor: url(../assets/two.png), auto;}
@@ -165,6 +169,7 @@ h2{
     background-color: #2C1AFF;
     margin: 0 auto;
     box-shadow: 0px 4px 4px 0px rgba(2,0,36,0.25);
+    transition: all 1s ease-in-out;
 }
 
 .enter:hover{
@@ -193,6 +198,7 @@ page two
     background-color: #5B0927;
     background-image: url(../assets/bgPgTwo.svg);
     background-size: contain;
+    padding: 0 0 5vh 0;
 }
 
 .home{
@@ -223,7 +229,9 @@ page two
     /* margin: 4vw 4vw 9vh 4vw;     */
     line-height: 0.9em;
     z-index: 1000;
+    transition: all 0.7s ease-in-out;
 }
+
 
 h3:hover{
     color: #FC79FF;
@@ -277,8 +285,8 @@ kt ::-webkit-progress-value
 }
 
 .rowOnePop img{
-    width: 13vw;
-    height: 13vw;
+    
+    height: 8vw;
     flex: 1;
     margin: 4vw -3vw 0 0;
 }
@@ -308,11 +316,26 @@ h6{
     animation: 10s ease-in-out 0s infinite alternate enterButton;
     background-color: #2C1AFF;
     margin: 0 auto;
-    box-shadow: 0px 4px 4px 0px rgba(2,0,36,0.25);
+    box-shadow: 0px 4px 4px 0px rgba(2,0,36,0.25); 
+    transition: all 0.7s ease-in-out;
+}
+
+.view:hover{
+    background-color: #2C1AFF;;
+    animation: none;
+}
+
+.rowThreeBio{
+    margin: 5vh 0 0 0;
 }
 
 span{
     color: #F0FFFA;
+    transition: all 0.7s ease-in-out;
+}
+
+span:hover{
+    color: #FC79FF;
 }
 
 
@@ -323,7 +346,7 @@ footer{
     background: linear-gradient(0deg, rgba(31,80,77,1) 0%, rgba(2,0,36,1) 95%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1f504d",endColorstr="#020024",GradientType=1);
     height: 50vh;
-    margin: 0vh 0 0 0;  
+    padding: 10vh 0 0 0;  
 }
 
 .flex-container{
